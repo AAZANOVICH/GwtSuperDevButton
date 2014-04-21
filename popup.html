@@ -1,0 +1,38 @@
+<!--
+/**********************************************************************
+*  Copyright (C) 2014 by a.azanovich@gmail.com
+*  All rights reserved.
+*
+**********************************************************************/
+-->
+<!doctype html>
+<head>
+    <style>
+        body {
+            width: 20em;
+        }
+    </style>
+    <title>Gwt Super Dev Mode Panel</title>
+    <script src="jquery-1.11.0.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+<h3>Gwt Super Dev Mode Panel</h3>
+<p>Alt+Q - repeat build</p>
+<table>
+    <tr>
+        <td>Code Server</td>
+        <td colspan="2">
+            <input id="codeServerUrl" style="width:100%" value=""/>
+        </td>
+    </tr>
+        <tr>
+            <td>Module Name</td>
+            <td>
+                <select id="availableModules" style="width:140px"/>
+            </td>
+            <td><button id="compileBtn" width="100%">Compile</button></td>
+        </tr>
+</table>
+
+</body>
