@@ -37,9 +37,11 @@ $(function () {
                 var moduleNames = parseModuleNames(responseHtml);
                 var moduleItem;
                 $.each(moduleNames, function(index, item) {
-                    moduleItem = "<option value='" + item +"'>" + item + "</option>";
-                    $("#availableModules").append(moduleItem);
-                    setButtonsEnabled(true);
+					if(item != '') {
+						moduleItem = "<option value='" + item +"'>" + item + "</option>";
+						$("#availableModules").append(moduleItem);
+						setButtonsEnabled(true);
+					}
                 });
             }
         }
