@@ -3,7 +3,7 @@
 
     "name":"GWT Super Dev Button",
     "description":"Extension for GWT super dev mode developers",
-    "version":"1.2.0",
+    "version":"1.2.1",
 
     "page_action": {
         "default_icon":"superman1.png",

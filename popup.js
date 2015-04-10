@@ -54,7 +54,7 @@ $(function () {
         var modules = scriptText.replace('window.config = {"moduleNames":["','').replace('"]};','').trim();
         var arr = modules.split(',');
 		  $.each(arr, function(index, item) {
-                 arr[index] = item.replace('\"',""); 
+                 arr[index] = item.replace(/"/g,""); 
           });
 		
         return arr;
